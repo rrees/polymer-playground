@@ -1,5 +1,23 @@
 
-<body>
+<html>
+	<head>
+		<script src="/bower_components/platform/platform.js"></script>
+		<link rel="import" href="/bower_components/core-collapse/core-collapse.html">
 
-<script></script
-</body>
+	</head>
+	<body>
+
+	<button id="collapser-button">toggle collapse</button>
+
+
+	<core-collapse id="collapse">
+	<p>Hello world</p>
+	</core-collapse>
+
+	<script>
+		document.querySelector('#collapser-button').addEventListener('click', function() {
+			document.querySelector('#collapse').toggle();
+		});
+	</script>
+	</body>
+</html>
